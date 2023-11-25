@@ -34,15 +34,30 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
 x
+
     <Button
         android:id="@+id/botonSiguiente"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFEB3B"
         android:text="Next"
-        app:layout_constraintTop_toBottomOf="@id/texto"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSkip"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/texto" />
+
+    <TextView
+
+        android:id="@+id/textViewSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+    </TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
